@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bird A - Voice of the Future</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bird A: Voice of the Future</h1>
+    <p><em>🔊 Listen carefully to what cannot be heard...</em></p>
+
+    <div class="riddle-box">
+      <p>.. . -.-. .... ---</p>
+      <p class="note">(Hint: Try converting from Morse code)</p>
+      <input type="text" id="answerA" placeholder="Your answer...">
+      <br>
+      <button onclick="checkAnswerA()">Submit</button>
+      <p id="resultA" class="result"></p>
+    </div>
+
+    <p><a href="index.html">⬅ Back to Node A</a></p>
+  </div>
+  <script>
+    function checkAnswerA() {
+      const input = document.getElementById('answerA').value.trim().toLowerCase();
+      const result = document.getElementById('resultA');
+      if (input === 'echo') {
+        result.textContent = 'Correct. Save this word.';
+        result.style.color = 'lime';
+      } else {
+        result.textContent = 'Incorrect. Try again.';
+        result.style.color = 'red';
+      }
+    }
+  </script>
+</body>
+</html>

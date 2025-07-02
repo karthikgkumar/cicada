@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bird D - The Seer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bird D: The Seer</h1>
+    <p><em>🔮 The wisdom of the past lights the path ahead...</em></p>
+
+    <div class="riddle-box">
+      <p><strong>"Dr. Abdul Kalam once said:</strong><br>
+      <em>Dreams are not what you see in sleep; they are that which keep you awake."</em></p>
+
+      <p class="note">What single word binds this quote together?</p>
+      <input type="text" id="answerD" placeholder="Your answer...">
+      <br>
+      <button onclick="checkAnswerD()">Submit</button>
+      <p id="resultD" class="result"></p>
+    </div>
+
+    <p><a href="index.html">⬅ Back to Node A</a></p>
+  </div>
+  <script>
+    function checkAnswerD() {
+      const input = document.getElementById('answerD').value.trim().toLowerCase();
+      const result = document.getElementById('resultD');
+      if (input === 'dream') {
+        result.textContent = 'Correct. Save this word.';
+        result.style.color = 'lime';
+      } else {
+        result.textContent = 'Incorrect. Try again.';
+        result.style.color = 'red';
+      }
+    }
+  </script>
+</body>
+</html>

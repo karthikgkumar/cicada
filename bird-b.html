@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bird B - Echoes of the Past</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bird B: Echoes of the Past</h1>
+    <p><em>🔁 History repeats itself, but always a few steps behind...</em></p>
+
+    <div class="riddle-box">
+      <p>fdudp</p>
+      <p class="note">(Hint: Caesar Cipher with a backward shift of 3)</p>
+      <input type="text" id="answerB" placeholder="Your answer...">
+      <br>
+      <button onclick="checkAnswerB()">Submit</button>
+      <p id="resultB" class="result"></p>
+    </div>
+
+    <p><a href="index.html">⬅ Back to Node A</a></p>
+  </div>
+  <script>
+    function checkAnswerB() {
+      const input = document.getElementById('answerB').value.trim().toLowerCase();
+      const result = document.getElementById('resultB');
+      if (input === 'karma') {
+        result.textContent = 'Correct. Save this word.';
+        result.style.color = 'lime';
+      } else {
+        result.textContent = 'Incorrect. Try again.';
+        result.style.color = 'red';
+      }
+    }
+  </script>
+</body>
+</html>

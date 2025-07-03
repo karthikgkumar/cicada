@@ -9,11 +9,12 @@
 <body>
   <div class="container">
     <h1>Bird B: Echoes of the Past</h1>
-    <p><em>🔁 History repeats itself, but always a few steps behind...</em></p>
+    <p><em>🔁 I chase a secret that rose three times at the year's turn, weaving digital riddles that echo with whispers of a long-lost ‘Isu Civilization.’ My trail lands me in a world where ancient architects left behind puzzling messages—and one even mentions Cicada 3301. Where am I headed?”
+
+    </em></p>
 
     <div class="riddle-box">
-      <p>fdudp</p>
-      <p class="note">(Hint: Caesar Cipher with a backward shift of 3)</p>
+      <p class="note">(Hint: convert the answer to the corresponding alphabetical digit and sum up the digits)</p>
       <input type="text" id="answerB" placeholder="Your answer...">
       <br>
       <button onclick="checkAnswerB()">Submit</button>
@@ -26,7 +27,7 @@
     function checkAnswerB() {
       const input = document.getElementById('answerB').value.trim().toLowerCase();
       const result = document.getElementById('resultB');
-      if (input === 'karma') {
+      if (input === '155') {
         result.textContent = 'Correct. Save this word.';
         result.style.color = 'lime';
       } else {

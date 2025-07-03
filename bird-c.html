@@ -17,15 +17,33 @@
 </head>
 <body>
   <div class="container">
+    
+<body>
+  <div class="container">
     <h1>Bird C: Silence of the Present</h1>
-    <p><em>🤫 Sometimes, truth whispers silently...</em></p>
+    <p><em>🔁 The mysterious dine of mine emerged only eight times —puzzles so cryptic they call to the intelligent. That same moment is also a tribute to raised dots that give voice to the blind. When do I dine?em></p>
 
     <div class="riddle-box">
-      <p class="hidden-text">I'm always with you, but never heard. Who am I? → now</p>
-      <p class="note">(Hint: Try highlighting the area above 👆)</p>
+      <p class="note">(Hint: answer in DDMM format)</p>
+      <input type="text" id="answerB" placeholder="Your answer...">
+      <br>
+      <button onclick="checkAnswerB()">Submit</button>
+      <p id="resultB" class="result"></p>
     </div>
 
     <p><a href="index.html">⬅ Back to Node A</a></p>
   </div>
-</body>
+  <script>
+    function checkAnswerB() {
+      const input = document.getElementById('answerB').value.trim().toLowerCase();
+      const result = document.getElementById('resultB');
+      if (input === '0401') {
+        result.textContent = 'Correct. Save this word.';
+        result.style.color = 'lime';
+      } else {
+        result.textContent = 'Incorrect. Try again.';
+        result.style.color = 'red';
+      }
+    }
+  </script>
 </html>

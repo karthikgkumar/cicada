@@ -24,7 +24,7 @@
     <p><em>🔁 The mysterious dine of mine emerged only eight times —puzzles so cryptic they call to the intelligent. That same moment is also a tribute to raised dots that give voice to the blind. When do I dine?em></p>
 
     <div class="riddle-box">
-      <p class="note">(Hint: answer in DDMM format)</p>
+      <p class="note">(Hint: answer in single digit DM format)</p>
       <input type="text" id="answerB" placeholder="Your answer...">
       <br>
       <button onclick="checkAnswerB()">Submit</button>
@@ -37,7 +37,7 @@
     function checkAnswerB() {
       const input = document.getElementById('answerB').value.trim().toLowerCase();
       const result = document.getElementById('resultB');
-      if (input === '0401') {
+      if (input === 41) {
         result.textContent = 'Correct. Save this word.';
         result.style.color = 'lime';
       } else {

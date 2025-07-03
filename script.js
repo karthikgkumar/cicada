@@ -4,7 +4,7 @@ function checkFinalPassword() {
   const input = document.getElementById('finalAnswer').value.trim().toUpperCase();
   const result = document.getElementById('finalResult');
 
-  if (input === 'KARMAECHODREAMNOW') {
+  if (input === 3502) {
     result.textContent = 'Access granted. Proceeding...';
     result.style.color = 'lime';
     setTimeout(() => {
